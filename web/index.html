@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom UI Announcer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="layer" class="layer hidden" aria-hidden="true">
+        <div class="announcement" id="announcement">
+            <div class="glow" id="glow"></div>
+            <div class="content">
+                <div class="meta">
+                    <span class="chip" id="type-chip">INFO</span>
+                    <span class="sender" id="sender">SERVER</span>
+                    <span class="dot">•</span>
+                    <span class="time" id="time">00:00</span>
+                </div>
+                <h1 id="title">Server Announcement</h1>
+                <p id="message"></p>
+            </div>
+            <div class="icon-wrap" id="icon-wrap">
+                <span id="icon">i</span>
+            </div>
+            <div class="progress"><span id="progress"></span></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
